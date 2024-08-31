@@ -257,6 +257,7 @@ header.scrolled .box i{
 }
 
 .content{
+    padding-bottom: 120PX;
     padding-top: 120px;
     /* margin-bottom: 100px; */
     display: flex;
