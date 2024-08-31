@@ -1330,6 +1330,9 @@ footer{
     .part-three p {
         width: 90%;
     }
+        .part-four h2, .part-four h4, .part-four p, .part-four ul, .part-four .btn {
+        padding-left: 7%;
+    }
 
     
     /* .first-link img {
