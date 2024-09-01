@@ -5,7 +5,12 @@ body{
     /* background-image: 
     linear-gradient(to bottom, #01cab8 60%,rgba(255, 255, 255, 0.694)); */
 }
-
+::-webkit-scrollbar{
+    color: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #01cab8;
+}
 
 .container{
     background-image: 
