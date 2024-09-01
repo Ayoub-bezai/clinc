@@ -11,7 +11,7 @@ body{
     background-image: 
     url("about2.jpg");
 
-    background-position: right;
+    background-position: center;
     /* backdrop-filter:blur(100px); */
     background-size: cover;
     background-repeat: no-repeat;
@@ -311,6 +311,7 @@ header.scrolled .box i{
     position: relative;
     margin-left: 5%;
 }
+
 .sec p{
     color: rgba(245, 245, 245, 0.874);
     font-size: 22px;
@@ -320,7 +321,7 @@ header.scrolled .box i{
     padding: 0%;
     margin: 0%;
     letter-spacing: 2px;
-    padding-bottom: 20px;
+    padding-bottom: 55px;
     margin-left: 5%;
 
 }
@@ -329,7 +330,7 @@ header.scrolled .box i{
     /* border: #0092648b 4px solid; */
     /* filter: blur(0.2px); */
     border-radius: 50px;
-    width: 60%;
+    width: 70%;
     padding-top: 20px;
     margin-top: 30px;
     margin-left: 10px;
@@ -342,6 +343,73 @@ header.scrolled .box i{
     backdrop-filter: blur(3px); 
     /* background-image:     linear-gradient(to right,#00926462 10%,rgba(229, 229, 229, 0.251)); */
 
+}
+.contact-about .phone{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+    border-left: 2px solid white;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-left: 2px;
+    transform: 1s 20ms ease;
+}
+.contact-about .phone:hover i{
+    color:#142985 ;
+}
+
+.contact-about .phone:hover p:nth-of-type(2){
+    color: #142985 ;
+    transform: translateY(-1px);
+}
+.contact-about .phone:hover a{
+    color: #142985 ;
+    transform: translateY(-1px);
+
+}
+
+.contact-about .phone p{
+    font-size: 16px;
+    padding-bottom: 13px;
+    padding-right: 0;
+
+
+}
+.contact-about .phone span{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.contact-about .phone i{
+    font-size: 23px;
+    transform: 1s 20ms ease;
+
+
+}
+.contact-about{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+@media (max-width:850px) {
+    .contact-about{
+
+        flex-direction: column;
+
+    }
+    .contact-about .phone {
+        width: 100%;
+    }
+    
+}
+.contact-about a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
 }
 
 
@@ -362,11 +430,14 @@ header.scrolled .box i{
 
 
 }
-.six,.seven{
-    margin-top: 80px;
-}
 .seven{
+    margin-top: 80px;
     width: 100%;
+
+}
+
+.six{
+    margin-top: 0;
 }
 .five{
     padding-top: 100px;
@@ -650,6 +721,52 @@ hr{
     color: #175c63;
     border: 0.5px solid #175c63;
 }
+.Patient{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+    background-image: url(back5.jpg);
+    background-position: cover;
+    overflow: scroll;
+    width: 100%;
+
+
+}
+.Patient div{
+    /* margin-left: 20%; */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 2px gainsboro solid;
+    color:#142985;
+    font-family: lexed,sans-serif;
+    width: 500px;
+    margin-left: 100px;
+
+    
+}
+
+.Patient div:nth-of-type(1){
+    margin-left: 2%;
+}
+
+.Patient div h5{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+::-webkit-scrollbar{
+    color: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #01cab8;
+}
 
 footer{
     position: relative;
@@ -884,6 +1001,7 @@ footer{
 
 
 }
+
 
 @keyframes slideRight {
     0%{
