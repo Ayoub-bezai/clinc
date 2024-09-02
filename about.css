@@ -554,6 +554,8 @@ header.scrolled .box i{
 
 
 }
+
+
 .part-four h4{
     color: white;
     font-weight: 600;
@@ -719,7 +721,24 @@ hr{
 .secend-title hr{
     width: 95%;
     color: #175c63;
-    border: 0.5px solid #175c63;
+    border: 0.5px solid #175b63c1;
+}
+
+.Patient-experience{
+    display: flex;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    border-top: 2px #175c63 solid;
+    color: #175c63;
+    font-size: 25px;
+    /* line-height: 5px; */
+    
+    letter-spacing: 2px;
+    padding: 0%;
+    margin: 0%;
+
 }
 .Patient{
     display: flex;
@@ -727,14 +746,23 @@ hr{
     align-items: flex-start;
     justify-content: space-around;
     position: relative;
-    background-image: url(back5.jpg);
+    background-color: rgb(255, 255, 255);
     background-position: cover;
     overflow: scroll;
     width: 100%;
+    padding-top: 0em;
+    padding-bottom: 3em;
+    padding-left: 0;
+    margin-left: 0;
+    box-sizing: border-box;
+    border-right: none;
+
+
+
 
 
 }
-.Patient div{
+.Patient span{
     /* margin-left: 20%; */
     display: flex;
     position: relative;
@@ -742,22 +770,70 @@ hr{
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    border: 2px gainsboro solid;
+    border: 2px rgba(210, 210, 210, 0.372) solid;
     color:#142985;
     font-family: lexed,sans-serif;
     width: 500px;
-    margin-left: 100px;
+    margin-left: 50px;
+    padding:2em;
+    padding-top: 0em;
+    margin-top: 0em;
+
+    padding-bottom: 0;
+    font-family:  arial, 'Arial Narrow Bold', sans-serif;
+    border-radius: 1em;
+    
+
 
     
 }
 
-.Patient div:nth-of-type(1){
-    margin-left: 2%;
+.Patient span:nth-of-type(1){
+    margin-left: 30px;
 }
 
-.Patient div h5{
+.Patient span h5{
     font-size: 30px;
     font-weight: 600;
+    width: 8.5em;
+    margin: 0;
+    margin-top: 0.5em;
+    padding: 0;
+    padding-left: 1em;
+    color: #175c63;
+
+
+}
+.Patient span:nth-of-type(3) h5{
+    margin-left: 1.5em;
+
+
+}
+.Patient span:nth-of-type(4) h5{
+    margin-left: 1.2em;
+
+}
+.Patient h3{
+    font-size: 50px;
+    color: #01cab8;
+    padding: 0%;
+    margin: 0%;
+}
+.Patient hr{
+    color: #01cab8;
+    outline: none;
+    border: 1px rgba(210, 210, 210, 0.372) solid;
+}
+
+.Patient img{
+    border-radius: 50%;
+}
+.Patient p{
+    color: #175c63;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 1em;
+    font-family:  lexed, 'Arial Narrow Bold', sans-serif;
 
 }
 
@@ -1049,7 +1125,7 @@ footer{
         /* display: none; */
     }
     nav{
-        padding-right: 130px;
+        padding-right: 160px;
 
     }
     header{
@@ -1115,7 +1191,7 @@ footer{
         font-size: 47px;
     }
     header nav .first {
-        font-size: 14px;
+        font-size: 12px;
     }
     header .clinc {
         padding-right: 64px;
@@ -1213,6 +1289,24 @@ footer{
     header .clinc {
         padding-right: 54px;
         height: 42px;
+    }
+
+    
+}
+
+@media (max-width:470px){
+    .part-four h2 {
+        font-size: 33px;
+        width: 100%;
+        padding-bottom: 15px;
+
+    }
+
+    
+}
+@media (max-width:320px){
+    .part-four h2 {
+        font-size: 27px;
     }
 
     
