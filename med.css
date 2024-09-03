@@ -118,6 +118,15 @@ header.scrolled .first li:hover,span button:hover, header.scrolled .first li:nth
     border-bottom: 2px solid #01cab8;
 
 }
+
+header.scrolled ul li a{
+    transition: 400ms 20ms linear;
+
+}
+header.scrolled ul li:hover a{
+    color: #01cab8;
+    transform: translateY(2px);
+}
 span button:hover{
     padding: 2px 10px;
 
