@@ -378,7 +378,7 @@ header.scrolled .box i{
     color: #142958 ;
     transform: translateY(-1px);
 }
-.contact-about .phone:hover a{
+.contact-about .phone:nth-of-type(2) a:hover{
     color: #142958 ;
     transform: translateY(-1px);
 
@@ -484,8 +484,8 @@ header.scrolled .box i{
 
 }
 .left-contact .contact-about a:hover{
-    color: #01cab8;
-    border-bottom: 1.5px #01cab8 solid;
+    color: #142958;
+    border-bottom: 1.5px #142958 solid;
     transform: translateY(-1px) scale(1.03);
 
 }
@@ -494,8 +494,8 @@ header.scrolled .box i{
     transition: 1s 20ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .contact-about .phone span:hover{
-    color: #01cab8;
-    border-bottom: 1.5px #01cab8 solid;
+    color: #142958;
+    border-bottom: 1.5px #142958 solid;
     
     transform: scale(1.02);
 }
@@ -610,7 +610,7 @@ font-size: 17px;
     margin-top: 3%;
 
 }
-form{
+.contact  form{
     position: relative;
     display: flex;
     align-items: start;
@@ -620,9 +620,12 @@ form{
     width: 100%;
     background-color: rgba(242,242,242,0.8);
     padding-left: 10%;
+    opacity: 0;
+    animation:   slideLeft 1s ease forwards;
+    animation-delay: 1.3s;
 
 }
-form h4 {
+.contact form h4 {
     color: #142958;
     font-size: 29px;
     padding: 0%;
@@ -631,16 +634,17 @@ form h4 {
     font-family: lexed,sans-serif;
     font-weight: 800;
     margin-bottom: 4%;
+    
 
 }
-form label{
+.contact form label{
     font-size: 16px;
     font-family: lexed,sans-serif;
     color: #142a58f9;
     padding: 0%;
     margin:  2% 1px;
 }
-form input , form select ,form textarea{
+.contact form input , .contact form select , .contact form textarea{
     width: 90%;
     outline: none;
     border: gainsboro solid 1px;
@@ -650,15 +654,15 @@ form input , form select ,form textarea{
     transition: 800ms 20ms linear;
     
 }
-select:focus> option:checked{
+.contact select:focus> .contact option:checked{
     background-color: #01cab8;
   }
-form input:focus,form textarea:focus,form select:focus {
+  .contact form input:focus,.contact form textarea:focus,.contact form select:focus {
     border: #01cab8 solid 1px;
 
 }
 
-form h6{
+.contact form h6{
     color: #142958;
     font-size: 18px;
     margin: 0%;
@@ -668,17 +672,17 @@ form h6{
     font-family: lexed,sans-serif;
 
 }
-form textarea{
+.contact form textarea{
     height: 8em;
     margin-bottom: 0.2em;
     padding-right: 2%;
     color: rgb(146, 144, 144);
 }
-form textarea:focus{
+.contact form textarea:focus{
     color: #000000;
 }
 
-form button{
+.contact form button{
     /* align-self: center; */
     background-color: #01cab8;
     color: #fff;
@@ -694,12 +698,18 @@ form button{
 
 
 }
-form button:hover{
+.contact form button:hover{
     transform: scale(1.08) ;
     background-color: #fff;
     color: #01cab8;
 }
-form button:active{
+.contact form button:active{
+    border-color: #01cab8;
+
+}
+.contact .phone:nth-of-type(2) a:hover{
+
+    color: #01cab8;
     border-color: #01cab8;
 
 }
@@ -762,7 +772,7 @@ footer{
     background-color: transparent;
     color: white;
     border: 2px solid #01cab8 ;
-    padding: 1px 2.5%;
+    padding: -5px 3.5%;
     font-weight: 600;
     display: flex;
     flex-direction: row;
