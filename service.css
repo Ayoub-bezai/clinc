@@ -116,7 +116,7 @@ header.scrolled ul li:nth-of-type(3) a{
 
 }
 header.scrolled .first li:hover, header.scrolled .first li:nth-of-type(3){
-    padding: 2px 0;
+    /* padding: 2px 0; */
     border-bottom: 2px solid #01cab8;
 
 }
@@ -137,7 +137,7 @@ header.scrolled ul li:hover a{
     color: #01cab8;
     transform: translateY(2px);
 }
-.first li:nth-of-type(4){
+.first li:nth-of-type(3){
     opacity: 0;
     animation:   slidetop 1s ease forwards;
     animation-delay: 0.5s;    box-shadow: none;
@@ -323,6 +323,184 @@ header.scrolled .box i{
     margin-left: 1%;
 }
 
+
+
+/* new */
+
+.seven{
+    display: flex;
+    justify-content: center;
+    background-image: 
+    url(back5.jpg);
+        background-position: right;
+    background-size: cover;
+    opacity: 0;
+    animation:   slideRight 1s ease forwards;
+    animation-delay: 1s;
+    padding: 0%;
+    margin: 0%;
+    
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+
+
+}
+
+
+.part-five{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    justify-content: center;
+    width: 95%;
+    /* height: 500px; */
+    padding: 0%;
+    margin: 0%;
+
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 200ms 20s ease-in;
+    margin-top: 10%;
+    border-radius: 0;
+    box-shadow: none;
+
+
+}
+
+
+
+
+.secend-col{
+    width: 50%;
+}
+.part-four,.part-five{
+    flex-direction: row;
+
+}
+.part-five{
+    justify-content: flex-start;
+    /* height:900px ; */
+    font-family: lexed,sans-serif;
+    margin-top: 50px;
+    width: 100%;
+
+
+}
+.part-five .first-col{
+    background-position: top;
+    background-size: cover;
+    background-image: url(back19.jpg);
+    width: 30%;
+    margin: 10px 2%;
+}
+.part-five .secend-col{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-bottom: 0%;
+}
+.part-five .secend-col .first-title h3,.part-five .secend-col .first-title p{
+    font-size: 55px;
+    font-weight: 700;
+    width: 100%;
+    color: #175c63;
+    margin-bottom: 10px;
+    border-radius: 0%;
+}
+.part-five .secend-col .first-title h3 span{
+    color: #01cab8;
+}
+.part-five .secend-col .first-title p{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.part-five .secend-col .secend-title {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.first-line,.secend-line ,.third-line {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10%;
+    /* margin-top: 15px;
+    padding-top: 15px; */
+    margin: 20px 10px;
+
+}
+.third-line {
+    gap: 7.5%;
+
+}
+
+.secend-line{
+    gap: 13%;
+
+
+}
+.first-line p ,.secend-line p,.third-line p{
+    margin: 0;
+    margin: 0 3%;
+    color: #175c63;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 15px;
+
+
+}
+.Approach ,.Responsability ,.Technology{
+    display: inline-block;
+    position: relative;
+    color: #175c63;
+}
+.Approach:hover,.Responsability:hover ,.Technology:hover{
+
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.Approach h6,.Responsability h6 ,.Technology h6{
+    margin: 0%;
+    padding-top: 10px;
+    font-size: 20px;
+    width: 90%;
+
+
+}
+.Approach i ,.Responsability i ,.Technology i{
+    font-size: 30px;
+
+}
+hr{
+    text-decoration: none;
+    border:1px white solid;
+    
+    z-index: 1;
+    color: #ffffff;
+    font-weight: 200;
+    width: 85%;
+}
+
+.secend-title hr{
+    width: 95%;
+    color: #175c63;
+    border: 0.5px solid #175b63c1;
+}
+
+
+
+
+
+/* new */
 .sec p{
     color: rgba(245, 245, 245, 0.874);
     font-size: 22px;
@@ -456,6 +634,7 @@ cursor: copy;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
+
 
 
 }
@@ -1043,6 +1222,23 @@ footer{
     .box input {
         width: 100px;
     }
+
+    .first-col{
+        display: none;
+    }
+    .part-five .secend-col{
+        padding-left: 2%;
+        width: 90%;
+    } 
+
+    .part-five{
+        flex-direction: column;
+    }
+
+    .seven{
+        margin-top: 0px;
+    }
+
     .content {
         padding-top: 80px;
     }
@@ -1099,6 +1295,21 @@ footer{
         font-size: 11px;
     }
    
+    .part-five .secend-col .first-title h3{
+        font-size: 45px;
+    }
+    .Approach i, .Responsability i, .Technology i {
+        font-size: 26px;
+    }
+    .Approach h6, .Responsability h6, .Technology h6 {
+
+        font-size: 16px;
+
+    }
+    .Approach i, .Responsability i, .Technology i {
+        font-size: 20px;
+    }
+
     .foot-one{
         flex-wrap: wrap;
         padding-bottom: 80px;
