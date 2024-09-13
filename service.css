@@ -393,7 +393,8 @@ header.scrolled .box i{
     background-position: top;
     background-size: cover;
     background-image: url(back19.jpg);
-    width: 30%;
+    width: 30%; 
+    height: 500px;
     margin: 10px 2%;
 }
 .part-five .secend-col{
@@ -402,6 +403,7 @@ header.scrolled .box i{
     flex-direction: column;
     padding-left: 10%;
     padding-bottom: 0%;
+    margin-top: 3%;
 }
 .part-five .secend-col .first-title h3,.part-five .secend-col .first-title p{
     font-size: 55px;
@@ -452,7 +454,7 @@ header.scrolled .box i{
     margin: 0;
     margin: 0 3%;
     color: #175c63;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 22px;
     padding-bottom: 15px;
 
@@ -639,6 +641,7 @@ cursor: copy;
 
 }
 .picture{
+    margin-top: 5%;
     margin-right: 5%;
     opacity: 0;
     animation:   slideRight 1s ease forwards;
@@ -710,7 +713,7 @@ height: 100%;
 }
 .parts p{
     color: #142958;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
     width: 80%;
     font-family: lexed,arial,sans-serif;
@@ -781,6 +784,8 @@ height: 100%;
 }
 .doctors>div:nth-of-type(1) .img{
     background-image: url(doc1.jpg);
+    background-attachment: scroll;
+
 }
 .doctors>div:nth-of-type(2) .img{
     background-image: url(doc2.jpg);
@@ -1120,7 +1125,6 @@ footer{
         opacity: 1;
     }
 }
-
 @keyframes slideRight {
     0%{
         transform: translateX(-100px);
@@ -1131,7 +1135,6 @@ footer{
         opacity: 1;
     }
 }
-
 @keyframes slidetop {
     0%{
         transform: translateY(-100px);
@@ -1223,9 +1226,12 @@ footer{
         width: 100px;
     }
 
-    .first-col{
-        display: none;
-    }
+    .part-five .first-col{
+        Width: 45%;
+        HEIGHT: 372PX;
+        ALIGN-SELF: center; 
+        margin-bottom: 30px; 
+      }
     .part-five .secend-col{
         padding-left: 2%;
         width: 90%;
@@ -1264,6 +1270,16 @@ footer{
     
 }
 
+@media (max-width:500px){
+
+    .part-five .first-col{
+        Width: 90%;
+        HEIGHT: 472PX;
+        ALIGN-SELF: center; 
+        margin-bottom: 30px; 
+      }
+
+}
 @media (max-width:360px) {
     .feet a {
         font-size: 18px;
@@ -1372,4 +1388,9 @@ header span button{
     padding: 10px;
 }
 
+}
+
+::selection{
+    background-color: #01cab8;
+    color: white;
 }

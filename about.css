@@ -1540,3 +1540,9 @@ footer{
 
     
 }
+
+
+::selection{
+    background-color: #01cab8;
+    color: white;
+}

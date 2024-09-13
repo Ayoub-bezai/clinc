@@ -427,12 +427,6 @@ header.scrolled .box i{
 
 
 
-::-webkit-scrollbar{
-    color: #ffffff;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #01cab8;
-}
 
 .contact{
     display: flex;
@@ -1180,3 +1174,16 @@ footer{
     
 }
 
+
+
+::selection{
+    background-color: #01cab8;
+    color: white;
+}
+
+::-webkit-scrollbar{
+    color: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #01cab8;
+}
